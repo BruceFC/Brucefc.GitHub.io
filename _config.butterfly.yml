@@ -1,0 +1,316 @@
+# Header
+menu:
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    - 音乐 || /music/ || fas fa-music
+    - 照片 || /Gallery/ || fas fa-images
+    - 电影 || /movies/ || fas fa-video
+  友链: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
+  rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+# highlight_theme support
+  # default
+  # darker
+  # pale night
+  # light
+  # ocean
+  # mac
+  # mac light
+highlight_theme: mac
+
+highlight_copy: true
+
+social:
+  fab fa-github: https://github.com/BruceFC || Github
+  fas fa-envelope: mailto:964333698fc@gmail.com || Email
+  fas fa-rss: xxxxx || Rss
+
+cover:
+  # 是否顯示文章封面
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  # 封面顯示的位置
+  # 三個值可配置 left , right , both
+  position: left
+  # 當沒有設置cover時，默認的封面顯示
+  default_cover: 
+
+post_meta:
+  page:
+    date_type: both # created or updated or both 主頁文章日期是創建日或者更新日或都顯示
+    categories: true # true or false 主頁是否顯示分類
+    tags: true # true or false 主頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+  post:
+    date_type: both # created or updated or both 文章頁日期是創建日或者更新日或都顯示
+    categories: true # true or false 文章頁是否顯示分類
+    tags: true # true or false 文章頁是否顯示標籤
+    label: true # true or false 顯示描述性文字
+
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+reward:
+  enable: true
+  QR_code:
+    - img: /image/wechat.jpg
+      link:
+      text: 微信
+    - img: /image/alipay.jpg
+      link:
+      text: 支付寶
+
+toc:
+  enable: true
+  number: true
+  auto_open: true # auto open the sidebar
+
+related_post:
+  enable: true
+  limit: 6 # 顯示推薦文章數目
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+
+# anchor 锚点
+# when you scroll in post , the url will update according to header id.
+anchor: true
+
+# 头像
+avatar:
+  img: /img/avatar.png
+  effect: false # 頭像會一直轉圈
+
+# copy settings 复制版权信息
+# copyright: Add the copyright information after copied content (複製的內容後面加上版權信息)
+copy:
+  enable: true
+  copyright:
+    enable: true
+    limit_count: 50
+
+footer:
+  owner:
+    enable: true
+    since: 2020
+
+# 页脚自定义文本
+custom_text: Hi, welcome to my <a href="https://jerryc.me/">blog</a>!
+
+translate:
+  enable: true
+  # 默认按钮显示文字(网站是简体，应设置为'default: 繁')
+  default: 简
+  #网站默认语言，1: 繁体中文, 2: 简体中文
+  defaultEncoding: 1
+  #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+  translateDelay: 0
+  #当文字是简体时，按钮显示的文字
+  msgToTraditionalChinese: "繁"
+  #当文字是繁体时，按钮显示的文字
+  msgToSimplifiedChinese: "简"
+
+# dark mode
+darkmode:
+  enable: true
+  # dark mode和 light mode切换按钮
+  button: true
+  autoChangeMode: false
+
+# 阅读模式
+readmode: true
+
+# 侧边栏
+aside:
+  enable: true
+  mobile: true # 手机页面（ 显示宽度 < 768px ）是否显示aside内容
+  position: right # left or right
+  card_author:
+    enable: true
+    description:
+    button:
+      icon: fab fa-github
+      text: Github
+      link: https://github.com/jerryc127/hexo-theme-butterfly
+  card_announcement:
+    enable: true
+    content: This is my Blog
+  card_recent_post:
+    enable: true
+    limit: 5 # if set 0 will show all
+    sort: date # date or updated
+  card_categories:
+    enable: true
+    limit: 8 # if set 0 will show all
+    expand: none # none/true/false
+  card_tags:
+    enable: true
+    limit: 40 # if set 0 will show all
+    color: false
+  card_archives:
+    enable: true
+    type: monthly # yearly or monthly
+    format: MMMM YYYY # eg: YYYY年MM月
+    order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
+    limit: 8 # if set 0 will show all
+  card_webinfo: true
+
+# 不蒜子 访问人数pv uv
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 运行时间
+runtimeshow:
+  enable: true
+  publish_date: 8/19/2020 18:50:00  
+  ##网页开通时间
+  #格式: 月/日/年 时间
+  #也可以写成 年/月/日 时间
+
+# 分享
+addThis:
+  enable: true # or false
+  pubid: ra-5f3d0508be564aac
+
+# 主题颜色样式
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+
+# 网站背景
+# 图片格式 background: url(http://xxxxxx.com/xxx.jpg)
+# 颜色 background: '#49B202'
+# 留空 显示白色
+background: '#086268'
+
+# footer是否显示图片背景(与top_img一致)
+footer_bg: true
+
+# 背景特效
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: false  #设置是否每次点击都更换綵带
+  mobile: false # false 手机端不显示 true 手机端显示
+#
+# canvas_ribbon_piao:
+#   enable: true
+#   mobile: false # false 手机端不显示 true 手机端显示
+#
+# canvas_nest:
+#   enable: true
+#   color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+#   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
+#   zIndex: -1 # z-index property of the background, default: -1.
+#   count: 99 # the number of lines, default: 99.
+#   mobile: false # false 手机端不显示 true 手机端显示
+
+# 美化页面显示 会改变 ol、ul、h1-h5 的样式
+beautify:
+  enable: true
+  field: site # site/post
+  title-prefix-icon: '\f0c1'
+  title-prefix-icon-color: "#F47466"
+
+# 全局字体
+# Global font settings 
+# Don't modify the following settings unless you know how they work (非必要不要修改)
+font:
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Lato, Roboto, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+  code-font: consolas, Menlo, "PingFang SC", "Microsoft JhengHei", "Microsoft YaHei", sans-serif
+
+# Blog 标题字体
+# Font settings for the site title and site subtitle 
+# 左上角网站名字 主页居中网站名字
+blog_title_font:
+  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif
+
+# 网站副标题
+# 主页subtitle
+subtitle:
+  enable: true
+  # 打字效果
+  effect: true
+  # 循环或者只打字一次
+  loop: false
+  # source调用第三方服务
+  # source: false 关闭调用
+  # source: 1  调用搏天api的随机语录（简体） https://api.btstu.cn/
+  # source: 2  调用一言网的一句话（简体） https://hitokoto.cn/
+  # source: 3  调用一句网（简体） http://yijuzhan.com/
+  # source: 4  调用今日诗词（简体） https://www.jinrishici.com/
+  # subtitle 会先显示 source , 再显示 sub 的内容
+  source: false
+  # 如果有英文逗号' , ',请使用转义字元 &#44;
+  # 如果有英文双引号' " ',请使用转义字元 &quot;
+  # 开头不允许转义字元，如需要，请把整个句子用双引号包住
+  # 例如 ”&quotNever put off till tomorrow what you can do today&quot"
+  # 如果关闭打字效果，subtitle只会显示sub的第一行文字
+  sub:
+    - 今日事&#44;今日毕
+    - Never put off till tomorrow what you can do today
+
+# 主页 top_img 显示大小
+# 主页设置
+# 默认top_img全屏，site_info在中间
+# 使用默认, 都无需填写（建议默认）
+index_site_info_top: # 主页标题距离顶部距离  例如 300px/300em/300rem/10%
+index_top_img_height:  #主页top_img高度 例如 300px/300em/300rem  不能使用百分比
+
+# 大图查看
+# fancybox http://fancyapps.com/fancybox/3/
+# fancybox: true
