@@ -13,8 +13,8 @@ toc:
 toc_number:
 auto_open:
 copyright:
-copyright_author:
-copyright_author_href:
+copyright_author: Bruce Fc
+copyright_author_href: https://brucefc.github.io/
 copyright_url:
 copyright_info:
 mathjax:
